@@ -1,3 +1,12 @@
+/*******************************************************************************
+ *
+ * Building a wifi controlled toy boat using Wukong2040 and Raspberry Pi Pico W
+ * 
+ * Please find more details at Hackster.io:
+ * https://www.hackster.io/idreams/build-a-toy-boat-with-wukong2040-and-rpi-pico-w-365c8d
+ * 
+ ******************************************************************************/
+
 // Include WiFi and Servo libraries
 #include <WiFi.h>
 #include <Servo.h>
@@ -24,7 +33,6 @@ String header;
  
 // Decode HTTP GET value
 String ServoValueStr = String(5);
-
 int pos1 = 0;
 int pos2 = 0;
 
@@ -135,7 +143,7 @@ void loop(){
 
                      
             // Page title
-            client.println("</head><body style=\"background-color:#70cfff;\">");
+            client.println("</head><body style=\"background-color:#00BFFF;\">");
             
             // Position display
             client.println("<h2 style=\"color:#ffffff;\">Servo Position: <span id=\"servoPos\"></span>&#176;</h2>"); 
