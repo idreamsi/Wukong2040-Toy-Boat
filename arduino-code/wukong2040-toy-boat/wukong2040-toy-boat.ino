@@ -42,13 +42,14 @@ int pos4 = 0;
  
 // Current time
 unsigned long currentTime = millis();
+
 // Previous time
 unsigned long previousTime = 0; 
+
 // Define timeout time in milliseconds (example: 2000ms = 2s)
 const long timeoutTime = 2000;
  
-void setup() {
-   
+void setup() { 
   // Attach to servo and define minimum and maximum positions
   // Modify as required
   myservo.attach(servoPin, 600, 2400);
@@ -84,7 +85,6 @@ void stopMotors() {
   analogWrite(M1forwardPin, 0);
   analogWrite(M1backwardPin, 0);
 }
-
  
 void loop(){
   
@@ -122,7 +122,6 @@ void loop(){
             client.println();
  
             // Display the HTML web page
-            
             // HTML Header
             client.println("<!DOCTYPE html><html>");
             client.println("<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0\">");
@@ -140,9 +139,8 @@ void loop(){
             
             // Get JQuery
             client.println("<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>");
-
-                     
-            // Page title
+   
+            // Page background
             client.println("</head><body style=\"background-color:#00BFFF;\">");
             
             // Position display
@@ -156,8 +154,7 @@ void loop(){
             client.println("<h2 style=\"color:#ffffff;\">Throttle: <span id=\"MotorValue\"></span></h2>");
             client.println("<div class=\"row-container\"><button class=\"button\" id=\"reverse-btn\" onmousedown=\"motorVal(456)\" onmouseup=\"motorVal(456)\">Reverse</button>");
             client.println("<button class=\"button\" id=\"stop-btn\" onmousedown=\"motorVal(0)\" onmouseup=\"motorVal(0)\">STOP</button></div>");
-						
-			
+							
             // Javascript
             client.println("<script>var slider = document.getElementById(\"servoSlider\");");
             client.println("var servoP = document.getElementById(\"servoPos\"); servoP.innerHTML = slider.value;");
@@ -171,11 +168,9 @@ void loop(){
             client.println("{Connection: close};</script>");
             // End page
             client.println("</body></html>");     
-            
-			
-			//------------------------------------
-			// GET data
-     
+            	
+            //------------------------------------
+            // GET data
             if(header.indexOf("GET /?value=") >= 0) {
               pos3 = header.indexOf('=');
               pos4 = header.indexOf('&'); 
@@ -188,7 +183,7 @@ void loop(){
               Serial.println(ServoValueStr); 
             } 
             
-			//------------------------------------
+            //------------------------------------
             // GET data
             if(header.indexOf("GET /?Mvalue=") >= 0) {
               pos1 = header.indexOf('=');
