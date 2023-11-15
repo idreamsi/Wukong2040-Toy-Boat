@@ -1,6 +1,6 @@
 /*******************************************************************************
- *
- * Building a wifi controlled toy boat using Wukong2040 and Raspberry Pi Pico W
+ * Wukong2040 Toy Boat 
+ * Build a wifi controlled toy boat with Wukong2040 and Raspberry Pi Pico W
  * 
  * Please find more details at Hackster.io:
  * https://www.hackster.io/idreams/build-a-toy-boat-with-wukong2040-and-rpi-pico-w-365c8d
