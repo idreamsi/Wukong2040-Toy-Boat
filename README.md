@@ -2,7 +2,7 @@
 
 <p align="center">
   <img width="750" height="500" src="https://github.com/idreamsi/Wukong2040-Toy-Boat
-/blob/main/main.png?raw=true">
+/blob/main/main.jpg?raw=true">
 </p>
 
 ## 📖 About
