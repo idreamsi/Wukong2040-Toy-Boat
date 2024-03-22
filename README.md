@@ -10,3 +10,8 @@ Learning how to build a Wi-Fi controlled boat with using [Elecfreaks Wukong2040 
 
 ## © License
 This software is written by Ramin Sangesari is licensed under The MIT License.
+
+## 💵 Donation
+If this project help you reduce time to develop, you can give me a cup of coffee :)
+
+- Donate via Bitcoin: 17FjznvUNk8G9UPKsvpVCq9U7z4iDtXVBE
